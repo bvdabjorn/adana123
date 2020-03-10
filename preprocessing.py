@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-data_train = pd.read_csv('train.csv')
+data_train = pd.read_csv('train.csv', keep_default_na = True)
 
 #Make every entry uppercase
 data_train = data_train.apply(lambda x: x.astype(str).str.upper())
@@ -36,18 +36,21 @@ for i in range(0,length_data_frame):
         
 data_train['os_details_2'] = new_os
 
+
 #Extracting cpu-details; moet ik nog verder naar kijken
 """data_train.apply(lambda x: x['cpu_details'].split(' ')[x['cpu_details'].split(' ').index('GHZ')-2].split('-')[1] \
        if '-' in x['cpu_details'].split(' ')[x['cpu_details'].split(' ').index('GHZ')-2] \
        else x['cpu_details'].split(' ')[x['cpu_details'].split(' ').index('GHZ')-2],axis=1)"""
 
-"""cpu_details_2 = list()
-if '-' in data_train['cpu_details'].split(' ')[data_train['cpu_details'].split(' ').index('GHZ')-2] :
-    cpu_details_2.append(data_train['cpu_details'].split(' ')[data_train['cpu_details'].split(' ').index('GHZ')-2].split('-')[1])
-elif pd.isnull(data_train['cpu_details'].split(' ')[data_train['cpu_details'].split(' ').index('GHZ')-2]): 
-    cpu_details_2.append(None)
-else:
-    cpu_details_2.append(data_train['cpu_details'].split(' ')[data_train['cpu_details'].split(' ').index('GHZ')-2])"""
+cpu_details_2 = list()
+for i in range(0, length_data_frame):
+    if data_train['cpu_details'][i] != 'NAN' and 'GHZ' in data_train['cpu_details'][i].split(' '):
+        if '-' in data_train['cpu_details'][i].split(' ')[data_train['cpu_details'][i].split(' ').index('GHZ')-2] :
+            cpu_details_2.append(data_train['cpu_details'][i].split(' ')[data_train['cpu_details'][i].split(' ').index('GHZ')-2].split('-')[1])
+        else:
+            cpu_details_2.append(data_train['cpu_details'][i].split(' ')[data_train['cpu_details'][i].split(' ').index('GHZ')-2])
+    else:
+        cpu_details_2.append('NAN')
 
-
-    
+data_train['cpu_details_2'] = cpu_details_2
+data_train.to_csv("/Users/bjrn/Documents/GitHub/adana123/datafile2.csv")
