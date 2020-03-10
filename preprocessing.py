@@ -36,16 +36,18 @@ for i in range(0,length_data_frame):
         
 data_train['os_details_2'] = new_os
 
-#Extracting cpu-details
+#Extracting cpu-details; moet ik nog verder naar kijken
 """data_train.apply(lambda x: x['cpu_details'].split(' ')[x['cpu_details'].split(' ').index('GHZ')-2].split('-')[1] \
        if '-' in x['cpu_details'].split(' ')[x['cpu_details'].split(' ').index('GHZ')-2] \
        else x['cpu_details'].split(' ')[x['cpu_details'].split(' ').index('GHZ')-2],axis=1)"""
 
-cpu_details_2 = list()
+"""cpu_details_2 = list()
 if '-' in data_train['cpu_details'].split(' ')[data_train['cpu_details'].split(' ').index('GHZ')-2] :
     cpu_details_2.append(data_train['cpu_details'].split(' ')[data_train['cpu_details'].split(' ').index('GHZ')-2].split('-')[1])
 elif pd.isnull(data_train['cpu_details'].split(' ')[data_train['cpu_details'].split(' ').index('GHZ')-2]): 
     cpu_details_2.append(None)
 else:
-    cpu_details_2.append(data_train['cpu_details'].split(' ')[data_train['cpu_details'].split(' ').index('GHZ')-2])
+    cpu_details_2.append(data_train['cpu_details'].split(' ')[data_train['cpu_details'].split(' ').index('GHZ')-2])"""
+
+
     
