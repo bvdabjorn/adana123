@@ -1,3 +1,8 @@
+install.packages("tidyverse")
+install.packages("dplyr")
+install.packages("stringr")
+install.packages("fastDummies")
+
 library(tidyverse)
 library(dplyr)
 library(stringr)
