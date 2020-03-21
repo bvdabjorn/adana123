@@ -102,8 +102,8 @@ summary(volmodel)
 
 
 
-stepboth = stepAIC(volmodel, k=2, direction = "both", scope=list(upper=~. , data=data_no_missing, lower=~1 ))
-stepboth
+stepAIC(volmodel, k=log(nrow(data_no_missing)), direction = "both", scope=list(upper=~. , data=data_no_missing, lower=~1 ))
+
 
 
 
@@ -113,23 +113,3 @@ Basiscomponentenmodel <- lm(min_price ~ pixels_x + factor(discrete_gpu) + os + r
 BIC(Basiscomponentenmodel)
 
 summary(Basiscomponentenmodel)
-
-
-
-
-
-#Cramer's V
-
-tab <- xtabs(~cpu+gpu , data = data_train)
-assocstats(tab)
-summary(assocstats(tab))
-
-#CORRELATIE corr
-data_train %>% correlate() %>% network_plot(min_cor=0.6)
-
-#CORRELATIE ggcorrplot
-ggcorrplot(cor(data_train), p.mat = cor_pmat(data_train), hc.order=TRUE, type='lower')
-
-#https://jamesmarquezportfolio.com/correlation_matrices_in_r.html
-
-as_tibble(data_train)
