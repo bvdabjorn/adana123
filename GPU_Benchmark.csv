@@ -369,13 +369,13 @@ FirePro M5100;2102
 Radeon R9 350;2100
 FirePro V7800;2091
 Quadro K4000M;2089
-Intel Iris Pro 580;2080
+Iris Pro 580;2080
 Quadro P520;2074
 GRID M6-1Q;2069
-Intel Iris Pro P580;2064
+Iris Pro P580;2064
 Quadro 5000M;2059
 Radeon R7 M465X;2057
-Intel Iris Plus 645;2054
+Iris Plus 645;2054
 GeForce GTX 480M;2050
 Radeon HD 6790;2048
 GeForce GTX 570M;2024
@@ -400,7 +400,7 @@ Radeon HD 7560D + 7700 Dual;1919
 Radeon HD 6850;1899
 Radeon HD 7700-serie;1899
 Radeon HD 8670D + HD 7700 Dual;1892
-Intel Iris Plus;1888
+Iris Plus;1888
 GeForce GTX 950A;1884
 FirePro 3D V7800;1867
 Radeon Vega 9;1855
@@ -418,8 +418,8 @@ Radeon Pro W5500M;1813
 Matrox C900 PCIe x16;1812
 RadeonT RX 560X;1809
 Radeon HD 8870M / R9 M270X / M370X;1799
-Intel Iris 650;1794
-Intel Iris Plus 655;1790
+Iris 650;1794
+Iris Plus 655;1790
 Radeon R7 FX-9830P RADEON;1790
 Radeon HD 8670D + 7700 Dual;1788
 Radeon HD 7750;1778
@@ -428,7 +428,7 @@ Radeon Pro WX3200;1766
 Radeon RX Vega 8;1745
 FirePro W600;1743
 FirePro M6000 Mobility Pro;1734
-Intel HD P630;1726
+HD P630;1726
 Quadro P500;1723
 GeForce GTX 550 Ti;1719
 FirePro M4000 Mobility Pro;1714
@@ -449,7 +449,7 @@ GeForce 940MX;1603
 Seria Radeon HD 7700;1603
 Quadro 4000;1598
 Quadro K3000M;1597
-Intel Iris Plus 650;1583
+Iris Plus 650;1583
 Radeon E8860;1577
 Radeon Vega 10;1571
 Radeon RX Vega 10;1569
@@ -459,7 +459,7 @@ GeForce 945M;1558
 Radeon HD 7560D + HD 6670 Dual;1554
 Radeon Vega 6;1553
 Radeon HD 8470D + HD 7500 Dual;1545
-Intel Iris Pro Graphics 6200;1544
+Iris Pro Graphics 6200;1544
 GeForce GTX 560M;1542
 Radeon HD 5770;1542
 FirePro V8700;1538
@@ -492,10 +492,10 @@ Radeon Vega 8 Mobile;1406
 FirePro W4100;1396
 Quadro 4000M;1389
 Radeon HD 7560D + HD 7670 Dual;1380
-Intel Iris Plus 640;1377
+Iris Plus 640;1377
 Radeon R7 PRO A12-8870;1375
 Radeon HD 7850M;1372
-Intel UHD P630;1371
+UHD P630;1371
 Radeon R5 A10-9630P 4C+6G;1366
 Quadro K2100M;1365
 FirePro M40003;1364
@@ -515,9 +515,9 @@ Radeon R7 M465;1306
 Radeon HD 8790M;1305
 Tesla M2070-Q;1305
 Quadro 3000M;1304
-TENSOR 1.0 Driver Intel HD 630;1299
-Intel Iris 550;1296
-Intel Iris Pro P6300;1292
+TENSOR 1.0 Driver HD 630;1299
+Iris 550;1296
+Iris Pro P6300;1292
 FirePro 3D V5800;1289
 GeForce GT 545;1289
 GeForce GTX 460M;1289
@@ -534,13 +534,13 @@ Radeon HD 8570D + HD 6670 Dual;1260
 Radeon R7 250;1259
 Radeon HD 7560D + HD 7600 Dual;1258
 Mobility Radeon HD 5870;1254
-Intel Iris 540;1251
+Iris 540;1251
 Radeon HD 5750;1251
 Radeon R7 A12-9800 RADEON;1248
 FirePro W4170M;1246
 GeForce GTX 275;1245
 Radeon HD 6770;1243
-Intel UHD 630;1241
+UHD 630;1241
 Quadro 2000 D;1239
 Radeon HD 8570D + 6570 Dual;1239
 Radeon HD 7660D + 6670 Dual;1238
@@ -563,12 +563,12 @@ Radeon R7 +8G;1190
 FirePro 3D V4800;1168
 Radeon R7 A10-9700 RADEON;1168
 Radeon R9 M265X;1168
-Intel UHD;1165
+UHD;1165
 FireStream 9250;1164
 Radeon 535;1162
 Barco MXRT 5400;1161
 Radeon R7 PRO A12-8870E;1160
-Intel Coffee Lake UHD;1158
+Coffee Lake UHD;1158
 Radeon R9 M280X;1147
 GeForce GT 745A;1144
 Radeon R7 PRO A10-9700E;1142
@@ -597,7 +597,7 @@ Radeon R7 A10-7890K;1100
 Radeon R7 A10-9700E RADEON;1100
 Radeon R7 M460;1096
 GeForce 840M;1095
-Intel Iris Pro 5200;1094
+Iris Pro 5200;1094
 GeForce GTX 850M - MODDED;1091
 GeForce GT 640M;1083
 MIRRORV3;1080
@@ -607,7 +607,7 @@ FirePro M4170;1065
 Radeon HD 7660D + 7670 Dual;1061
 Radeon HD 7520G + 7700M Dual;1060
 Firepro M4100;1059
-Intel UHD Graphics 620;1057
+UHD Graphics 620;1057
 GeForce GT 445M;1055
 Radeon R5 340;1054
 OPAL XT/GL;1053
@@ -629,7 +629,7 @@ Radeon HD 4770;1033
 Quadro 2000;1032
 Radeon HD 8570D + HD 8570 Dual;1032
 GeForce 940A;1031
-Intel HD P530;1029
+HD P530;1029
 Radeon HD 8600/8700M;1029
 Radeon HD7570;1028
 Radeon R7 + R5 330 Dual;1028
@@ -644,7 +644,7 @@ Radeon R5 430;1015
 Radeon R5 A6-9500E 2C+4G;1014
 Radeon R7 PRO A12-9800E;1014
 GeForce 920MX;1013
-Intel HD 630;1013
+HD 630;1013
 Radeon HD 7690M XT;1009
 Radeon HD 4850;1005
 GeForce 830A;1004
@@ -658,7 +658,7 @@ Radeon HD 7640G + HD 8750M Dual;996
 Radeon HD 6800M;993
 Radeon HD 8570;993
 Barco MXRT 5450;992
-Intel Iris 6100;989
+Iris 6100;989
 Radeon HD 7560D + 7570 Dual;985
 Radeon HD 8690M;984
 Radeon HD 7560D + 7560D Dual;982
@@ -673,7 +673,7 @@ Radeon R6 A10-9600P 4C+6G;970
 GeForce 930M;968
 Radeon HD 7660G N HD 7660G + HD 7700M N HD 7700M D;966
 Radeon HD 6770M;964
-Intel Iris 5100;963
+Iris 5100;963
 Radeon HD 8570D + R7 240 Dual;963
 Radeon R7 A10 PRO-7850B;962
 GeForce 830M;961
@@ -682,7 +682,7 @@ Radeon HD 5600/5700;958
 Radeon R6 Opteron X3418;955
 Radeon R7 A265;954
 Radeon R7 PRO A10-8750B;954
-Intel HD Graphics 620;949
+HD Graphics 620;949
 Radeon HD 8570 + HD 7660D Dual;949
 Radeon HD 8670D + R7 200 Dual;949
 Radeon R7 A8-7680;948
@@ -697,11 +697,11 @@ NVS 810;939
 Radeon 520;938
 Radeon HD 6750M;937
 Radeon HD 7560D + HD 8570 Dual;935
-Intel HD 530;934
+HD 530;934
 Radeon HD 7660G + 7730M Dual;931
 Radeon R7 240 + HD 8670D Dual;930
 Radeon. HD 7730M;928
-Intel Iris Pro 6100;925
+Iris Pro 6100;925
 GeForce 920A;919
 Radeon R7 240 + HD 8570D Dual;917
 GeForce GT 645M;914
@@ -728,13 +728,13 @@ Radeon R5 PRO A6-9500 2C+6G;895
 FirePro W2100;892
 Radeon R7 A10-7800;889
 GeForce 840A;888
-Intel UHD 620;888
+UHD 620;888
 Radeon R7 + R5 435 Dual A10-9700 RADEON;885
 Radeon R9 M385X;885
 Radeon HD 8650G + 7670M Dual;883
 Radeon R7 PRO A12-8830B;882
 Radeon HD 7660G + HD 7730M Dual;881
-Intel UHD 617;878
+UHD 617;878
 Radeon R5 PRO A6-9500E 2C+4G;877
 Radeon R7 A8-7670K;876
 FirePro V3900;874
@@ -744,7 +744,7 @@ Radeon R7 G;869
 Radeon HD 8570D + HD 6570 Dual;868
 Mobility Radeon HD 4850;866
 GeForce GT 640M LE;865
-Intel HD 520;864
+HD 520;864
 Radeon HD 8470D + HD 6450 Dual;862
 Radeon R7 A12-9730P RADEON;861
 Radeon HD 8750M;857
@@ -762,7 +762,7 @@ Radeon R5 PRO A6-8570E 2C+4G;839
 FireGL V8600;838
 Radeon HD 8470D + 6570 Dual;837
 Radeon HD 8670D + R5 235 Dual;836
-Intel UHD 615;835
+UHD 615;835
 Radeon HD 6650A;835
 GeForce 8800 GTS 512;833
 Radeon HD 7560D + 6570 Dual;833
@@ -770,8 +770,8 @@ Radeon HD 7520G + HD 7500/7600 Dual;832
 Radeon R7 PRO A8-8650B;832
 Radeon HD 7660G + 7600M Dual;831
 Radeon HD 8650G + 8600/8700M Dual;831
-Intel HD 5200;830
-Intel HD 6000;829
+HD 5200;830
+HD 6000;829
 Radeon R7 PRO A12-9800B;829
 GeForce GT 440;827
 GRID M60-0Q;827
@@ -796,7 +796,7 @@ Radeon R5 A10-9600P 4C+6G;805
 Radeon HD 6670;804
 Quadro FX 3800M;802
 Radeon HD 8550G + 8600/8700M Dual;802
-Intel HD 615;799
+HD 615;799
 Radeon HD 8650G + HD 8790M Dual;799
 GeForce 9800 GX2;797
 Radeon HD 7660G;797
@@ -865,13 +865,13 @@ Radeon R7 240;742
 Radeon HD 8650G + 7600M Dual;741
 Radeon R8 M365DX;740
 GRID K160Q;739
-Intel Poison Ivy;738
+Poison Ivy;738
 Radeon HD 7670M + 7670M Dual;738
 Radeon R5 235 + HD 8570D Dual;737
 GeForce GTX 285M;734
 Radeon R5 M435;734
 GeForce GT 555M;732
-Intel UHD 610;731
+UHD 610;731
 GeForce 920M;730
 Radeon HD 7550M/7650M;728
 GRID K140Q;727
@@ -900,7 +900,7 @@ GeForce GT 740A;704
 NVS 5400M;704
 Radeon HD 7640G + HD 7600M Dual;704
 Radeon HD 7660G N HD 7660G + HD 7670M Dual;704
-Intel HD 4600;699
+HD 4600;699
 Radeon HD 7570M/HD 7670M;699
 TRINITY DEVASTATOR MOBILE;699
 Radeon HD 7640G + HD 8570M Dual;696
@@ -910,14 +910,14 @@ Radeon R7 A12-9700P RADEON;692
 Radeon HD 7640G + 7700M Dual;690
 Radeon R7E;690
 Radeon R5 PRO A6-8530B 2C+4G;689
-Intel HD 515;688
+HD 515;688
 Radeon HD 7640G + 8600/8700M Dual;688
 Radeon HD 8650G + R5 M230 Dual;686
 Radeon HD 8550D;685
 GeForce GT 530;684
-Intel HD 5000;684
+HD 5000;684
 Radeon HD 6630M;684
-Intel HD P4600/P4700;682
+HD P4600/P4700;682
 GRID P40-3Q;681
 Quadro FX 5600;681
 Radeon R5 A6-9400 RADEON R5, 6 COMPUTE CORES 2C+4G;680
@@ -939,7 +939,7 @@ FirePro M7740;665
 Radeon HD 7640G + HD 8500M N HD 8500M Dual;665
 Quadro 500M;664
 Radeon HD 8550G + 8690M Dual;664
-Intel HD 5600;663
+HD 5600;663
 Radeon HD 7560D;663
 Radeon R7 M260;661
 FireGL V7700;660
@@ -988,7 +988,7 @@ Radeon HD 7640G + HD 7400M Dual;621
 FirePro M2000;620
 GeForce GT 550M;620
 Radeon HD 8570 + 8670D Dual;620
-Intel HD 610;619
+HD 610;619
 Radeon HD 8550G + R5 M200 Dual;619
 Radeon HD 8550G + 8600M Dual;617
 GeForce GTS 360M;616
@@ -1005,7 +1005,7 @@ Radeon HD 7640G + HD 8500M Dual;607
 Radeon HD 8650G + HD 8600M Dual;606
 GeForce 8800 GTS;605
 GeForce GT 720;605
-Intel HD P4600;604
+HD P4600;604
 Radeon HD 8550G + 8500M Dual;602
 Radeon HD 7520G + HD 7600M Dual;599
 Radeon HD 8610G + 8670M Dual;599
@@ -1026,7 +1026,7 @@ Radeon HD 7640G + HD 8600/8700M Dual;586
 Radeon HD 7640G + 8500M Dual;585
 Radeon HD 8650G + HD 8670M Dual;585
 Radeon HD 8610G + HD 8600M Dual;583
-Intel HD 510;582
+HD 510;582
 Radeon HD 7520G + 7500/7600 Dual;582
 Radeon HD 8550G;581
 GeForce GT 630;579
@@ -1034,7 +1034,7 @@ Radeon HD 8550G + 8670M Dual;579
 Radeon HD 8450G + R5 M230 Dual;578
 Radeon HD 7620G + 8670M Dual;577
 Radeon HD 8610G + HD 8670M Dual;577
-Intel Skylake HD DT GT2;576
+Skylake HD DT GT2;576
 Quadro 600;576
 Radeon R5 A240;576
 GeForce 8800 GT;575
@@ -1045,7 +1045,7 @@ Radeon HD 8450G + HD 8670M Dual;574
 Radeon R7 M360;573
 Radeon R6 + R7 M265DX Dual;570
 GeForce GTS 250M;569
-Intel HD 5500;568
+HD 5500;568
 Radeon HD 7560D + 6450 Dual;568
 Radeon HD 6610M;565
 Mobility Radeon HD 3870 X2;564
@@ -1091,7 +1091,7 @@ Radeon HD 7570M;532
 Radeon HD 8550G + 8570M Dual;532
 Radeon HD 8570M;531
 RADEON HD6530D;531
-Intel HD 4400;530
+HD 4400;530
 GeForce GT625M;529
 Radeon HD 8550G + HD 8570M Dual;529
 Quadro FX 2700M;528
@@ -1107,7 +1107,7 @@ Radeon R5 M320;520
 GeForce 9800M GTX;517
 IncrediblE HD 4000;517
 GeForce 820M;516
-Intel HD P4000;516
+HD P4000;516
 GeForce 9600 GSO;514
 GeForce GT 630M;514
 A10-8700P;513
@@ -1202,20 +1202,20 @@ Radeon HD 7640G N HD 7640G + HD 8570M Dual;422
 RADEON HD6410D;422
 Quadro FX 1800;421
 Radeon HD 5570;420
-Intel 4th Generation Haswell HD;419
-Intel HD Family;419
+4th Generation Haswell HD;419
+HD Family;419
 Quadro FX 2800M;419
 Radeon HD 8450G;416
 Radeon HD 7500G;412
-Intel HD 505;411
-Mobile Intel HD;409
+HD 505;411
+Mobile HD;409
 Radeon HD 7470M;407
 Radeon HD 6480G;406
 Radeon HD 7640G + HD 7600M N HD 7600M Dual;406
 RADEON E4690;405
 Radeon HD 7600G + 7500M/7600M Dual;405
 Radeon HD 5550;402
-Intel HD 5300;401
+HD 5300;401
 Mobility Radeon HD 4650;401
 GeForce GT 620;393
 GeForce GT 705;390
@@ -1241,14 +1241,14 @@ Radeon R6 PRO A8-8600B 4C+6G;363
 Radeon HD 7470;361
 GeForce GT 710M;359
 Radeon R3;358
-Intel UHD 605;355
+UHD 605;355
 Radeon HD 7500G + HD 7500M/7600M Dual;355
 Mobility Radeon HD 565v;353
 Radeon HD 6480M;353
 Radeon HD 7580D;350
 GeForce GT 240M;349
 Radeon R4;346
-Intel UHD 600;345
+UHD 600;345
 FireGL V5600;341
 FirePro 3D V3750;341
 Radeon HD 8470;341
@@ -1264,8 +1264,8 @@ Radeon HD 4650;333
 Radeon HD 8330;332
 GeForce GT 230M;331
 Radeon R5 310;331
-Intel HD 4000;329
-Intel HD P3000;329
+HD 4000;329
+HD P3000;329
 Radeon HD 7450M;329
 Radeon HD 7600G + HD 7400M Dual;328
 Radeon HD 8400;327
@@ -1279,7 +1279,7 @@ Radeon HD 8280;319
 GeForce GT 415M;318
 Mobility Radeon HD 560v;318
 GeForce 9700M GT;317
-Intel HD 500;317
+HD 500;317
 Radeon HD 8280E;314
 Radeon HD 7520G + 8600/8700M Dual;311
 GeForce 510;310
@@ -1332,7 +1332,7 @@ Wine Display Adapter;261
 Radeon HD 6410D;260
 Radeon HD 6450A;260
 GeForce 7900 GT;258
-Intel HD 3000;258
+HD 3000;258
 Radeon HD 8250;257
 GeForce GT 220M;256
 NVS 4200M;256
@@ -1372,9 +1372,9 @@ Radeon HD 6320 Graphic;216
 FirePro 2460;215
 Mobility Radeon. HD 5470;215
 Mobility Radeon HD 5450;214
-Intel HD 2000;213
+HD 2000;213
 Quadro FX 1600M;213
-Intel 2nd Generation SandyBridge HD;212
+2nd Generation SandyBridge HD;212
 Radeon HD 2600 PRO;211
 WinFast GT 610;211
 GeForce 405;210
@@ -1386,7 +1386,7 @@ Radeon HD 7340;207
 GeForce 8700M GT;206
 Quadro FX 4500;206
 Barco MXRT 1450;205
-Intel 2nd Generation SandyBridge HD 3000;205
+2nd Generation SandyBridge HD 3000;205
 Radeon HD 3670;205
 Quadro NVS 320M;204
 GeForce 9600M GT;203
@@ -1398,7 +1398,7 @@ GeForce G210M;198
 Radeon HD 6320M;198
 Radeon HD 7340G;196
 Radeon HD 8180;195
-Intel Infoshock HD;193
+Infoshock HD;193
 Radeon HD 8210E;193
 Radeon HD 6430M;192
 Mobility Radeon HD 2600 XT;191
@@ -1436,7 +1436,7 @@ GeForce 9500M G;166
 Radeon HD 7310M;166
 GeForce 315M;165
 GeForce Go 7600 GT;165
-Intel HD manual-gen9_2015-133271;165
+HD manual-gen9_2015-133271;165
 GeForce 9600M GS;164
 Radeon E6465;164
 Radeon HD 6320;158
@@ -1471,7 +1471,7 @@ Radeon HD 6290M;140
 Radeon HD 7290;140
 Radeon X1800 GTO;140
 GeForce 9400;139
-Intel Haswell HD - GT2;139
+Haswell HD - GT2;139
 GeForce 6800 Ultra;138
 Mobility Radeon HD 3650;138
 Radeon HD 6290;138
@@ -1502,7 +1502,7 @@ Radeon HD 6310;124
 Seria Mobility Radeon HD 3400;124
 GeForce 8600M GS;123
 GeForce 9400M G;123
-Intel Haswell HD - GT1;123
+Haswell HD - GT1;123
 Matrox G200e WDDM 2.0;123
 Radeon HD 7290M;123
 Radeon HD 4250;122
@@ -1514,9 +1514,9 @@ GeForce 9400M;118
 Radeon HD 2400 XT;118
 RV530 PRO;118
 FireMV 2260;117
-Mobile Intel 45 Express-Chipsatzfamilie;117
+Mobile 45 Express-Chipsatzfamilie;117
 FireGL V7200;116
-Intel Media Accelerator HD;116
+Media Accelerator HD;116
 PHDGD Quantic C3;116
 Radeon X1700 Targa Edition;116
 Quadro FX 570;115
@@ -1528,7 +1528,7 @@ Quadro FX 560;113
 FirePro 2260;112
 GeForce 6800;112
 GeForce G 105M;112
-Intel HD Modded;112
+HD Modded;112
 Radeon X1950 Pro;112
 Sapphire RADEON X800 GT;112
 Mobility Radeon HD 3400 Serisi;111
@@ -1595,7 +1595,7 @@ Quadro NVS 150M;92
 GeForce 8300;91
 GeForce 9300 GS;91
 GeForce G205M;91
-Intel Q45/Q43 Express Chipset;91
+Q45/Q43 Express Chipset;91
 Mobility Radeon HD 3450;91
 Quadro NVS 160M;91
 Quadro NVS 450;91
@@ -1659,14 +1659,14 @@ Radeon X550XTX;70
 BASICDISPLAY;69
 GeForce 7500 LE;69
 GeForce Go 6600;69
-Intel G45/G43 Express Chipset;69
+G45/G43 Express Chipset;69
 Quadro FX 3000;69
 Radeon X1600 Pro / X1300XT;69
 RADEON X800 XL;69
 FireGL V3350;68
 GeForce 8400 SE;68
 256MB RADEON X600;67
-Intel G45/G43/G41 Express Chipset;67
+G45/G43/G41 Express Chipset;67
 Matrox G200eR WDDM 1.2;67
 Matrox G200eR WDDM 2.0;67
 128MB DDR Radeon 9800 Pro;66
@@ -1677,12 +1677,12 @@ MOBILITY RADEON X700;66
 Radeon X1550;66
 M71-M;64
 RADEON X800 PRO;64
-Intel B43 Express Chipset;63
+B43 Express Chipset;63
 Quadro FX 550;63
 128 DDR Radeon 9800 Pro;62
 GeForce 6600;62
 GeForce Go 7400;62
-Intel HD manual-15.28-1861;62
+HD manual-15.28-1861;62
 MOBILITY FireGL V3200;62
 Mobility Radeon HD 3410;62
 Quadro FX 350M;62
@@ -1697,13 +1697,13 @@ RADEON 9800 PRO;59
 GeForce 6800 XE;58
 GeForce 8400M G;58
 Radeon X1300;58
-Intel - Express Chipset Q45/Q43;57
-Intel G41 Express Chipset;57
-Intel G41 Express-Chipsatz;57
-Intel Q45/Q43 Express-Chipsatz;57
+- Express Chipset Q45/Q43;57
+G41 Express Chipset;57
+G41 Express-Chipsatz;57
+Q45/Q43 Express-Chipsatz;57
 RADEON 9800;57
 GeForce 8200M G;56
-Intel - Express Chipset G41;56
+- Express Chipset G41;56
 Quadro NVS 135M;56
 RADEON 9800 XT;56
 RADEON X550XT;56
@@ -1738,11 +1738,11 @@ GeForce Go 7200;45
 128 DDR Radeon 9700 TX w/TV-Out;44
 GeForce 6200;44
 GeForce Go 6600 TE/6200 TE;44
-Mobile Intel 4 Express-Chipsatzfamilie;44
-Mobile Intel serie 4 Express;44
+Mobile 4 Express-Chipsatzfamilie;44
+Mobile serie 4 Express;44
 MOBILITY FireGL V5200;44
 GeForce 7100 GS;43
-Mobile Intel 45 Express;43
+Mobile 45 Express;43
 GeForce 7300 SE/7200 GS;42
 Matrox G200eW;42
 Mobility Radeon X1400;42
@@ -1763,7 +1763,7 @@ Mobility Radeon X1300;39
 Mobility Radeon X1350;39
 S3 Chrome 430 ULP;39
 GeForce 6500;38
-Mobile Intel - famiglia Express Chipset 45;38
+Mobile - famiglia Express Chipset 45;38
 Quadro NVS 285 128MB;38
 RADEON X300SE;38
 256MB DDR Radeon 9800 XT;37
@@ -1796,7 +1796,7 @@ GeForce 6150SE nForce 430;32
 GeForce 6200 A-LE;32
 GeForce 7025 / nForce 630a;32
 GeForce FX 5900ZT;32
-Intel Media Accelerator;32
+Media Accelerator;32
 Matrox M9138 LP PCIe x16;32
 Radeon X1200;32
 GeForce 7050 / nForce 620i;31
@@ -1805,7 +1805,7 @@ Radeon X1270;31
 Red Hat QXL controller;31
 All-in-Wonder X1800XL;30
 FireGL T2-128;30
-Intel G35 Express;30
+G35 Express;30
 MOBILITY RADEON 9550;30
 OpenXT Display Driver;30
 Radeon 9550 / X1050;29
@@ -1825,12 +1825,12 @@ Radeon Xpress 1270;26
 GeForce 6100 nForce 400;25
 GeForce 6100 nForce 420;25
 Matrox M9125 PCIe x16;25
-PHDGD Sapphire GR for Mobile Intel 965;25
+PHDGD Sapphire GR for Mobile 965;25
 RADEON 9600 Family;25
 GeForce 6150SE;24
 GeForce FX 5700LE;24
 GeForce Go 6400;24
-Mobile Intel 965 Express-Chipsatzfamilie;24
+Mobile 965 Express-Chipsatzfamilie;24
 MOBILITY RADEON 9600 PRO TURBO;24
 ALL-IN-WONDER 9800;23
 GeForce 6100 nForce 430;23
@@ -1846,12 +1846,12 @@ RADEON XPRESS 200M;22
 GeForce 6100;21
 GeForce 6150;21
 GeForce 6150 LE;21
-Mobile Intel 965 Express;20
+Mobile 965 Express;20
 PHDGD Solo 2 x64;20
 Quadro NVS 210S / GeForce 6150LE;20
 Matrox M9120 PCIe x16;19
 GeForce 7150M / nForce 630M;18
-Intel G965 Express;18
+G965 Express;18
 Quadro FX 2000;18
 QXL KMDOD;18
 RADEON 9600 TX Family;18
@@ -1877,41 +1877,41 @@ FireMV 2400 PCIe;11
 GeForce FX 5200SE;11
 PHDGD Solo 1.2.0 x86;11
 RGH Drivers v3;11
-Familia Intel Q33 Express Chipset;10
-Intel Q33 Express;10
+Familia Q33 Express Chipset;10
+Q33 Express;10
 Master X3100 Driver;10
 Matrox Millennium P690 PCIe x16;10
 MOBILITY IGP 9000/9100;10
 VIA Chrome9 HD IGP;10
 ASUS A7000;9
 GeForce FX 5600XT;9
-Intel Q35 Express;9
+Q35 Express;9
 Matrox M9148 LP PCIe x16;9
 Matrox Parhelia 256MB;9
 GeCube RADEON 7000;8
 GeForce FX 5500;8
 GeForce FX Go 5200;8
-Intel 82945G Express-Chipsatzfamilie;8
-Intel Q35 Embedded;8
-Mobile Intel 965 Express - BR-0907-0461 v1839;8
+82945G Express-Chipsatzfamilie;8
+Q35 Embedded;8
+Mobile 965 Express - BR-0907-0461 v1839;8
 Quadro NVS 280 PCI;8
 ASUS V9520-X V62.11;7
-Famille de jeu de puces Express Intel 946GZ;7
+Famille de jeu de puces Express 946GZ;7
 GeForce FX 5100;7
 GeForce FX 5200;7
 GeForce FX 5200LE;7
 GeForce4 Ti 4400;7
-Intel US15 Embedded Media and Controller;7
+US15 Embedded Media and Controller;7
 MOBILITY RADEON 9000 IGP;7
 Quadro FX 500/FX 600;7
 GeForce PCX 5300;6
 GeForce2 Ultra;6
 GeForce4 MX Integrated GPU;6
 GeForce4 Ti 4800 SE;6
-Intel 946GZ Express;6
-Intel G33/G31 Express;6
-Intel Media Accelerator 600;6
-Intel Q965/Q963 Express;6
+946GZ Express;6
+G33/G31 Express;6
+Media Accelerator 600;6
+Q965/Q963 Express;6
 Matrox Millennium P690 Plus LP PCIe x16;6
 MOBILITY RADEON 7000 IGP;6
 Quadro NVS 55/280 PCI;6
@@ -1929,14 +1929,14 @@ GeForce4 448 Go;5
 GeForce4 Ti 4200;5
 GeForce4 Ti 4600;5
 GeForce4 Ti 4800;5
-Intel 82915G Express;5
-Intel 82945G Express;5
+82915G Express;5
+82945G Express;5
 Matrox M9120 Plus LP PCIe x16;5
 Matrox M9128 LP PCIe x16;5
 Matrox Millennium P650 PCIe 128;5
 Matrox Parhelia APVe;5
-Mobile Intel 945GM Express;5
-Mobile Intel 945GM/GU Express;5
+Mobile 945GM Express;5
+Mobile 945GM/GU Express;5
 MOBILITY RADEON 9000/9100 IGP;5
 Quadro 280 NVS PCIe;5
 Quadro4 980 XGL;5
@@ -1960,12 +1960,12 @@ GeForce4 MX 440;4
 GeForce4 MX 440 with AGP8X;4
 GeForce4 MX 440SE;4
 GeForce4 MX 460;4
-Intel 82865G Controller;4
-Intel 915G,910G Express;4
-Intel 915G/915GV/910GL Embedded Controller Functio;4
-Intel 945G Embedded Chipset Function 0;4
-Mobile Intel 915GM/GMS/910GML Express;4
-Mobile Intel 945 Express;4
+82865G Controller;4
+915G,910G Express;4
+915G/915GV/910GL Embedded Controller Functio;4
+945G Embedded Chipset Function 0;4
+Mobile 915GM/GMS/910GML Express;4
+Mobile 945 Express;4
 MOBILITY FIREGL 7800;4
 MOBILITY/RADEON 9000;4
 Quadro2 MXR/EX;4
@@ -1987,11 +1987,11 @@ GeForce2 MX/MX 400;3
 GeForce4 420 Go;3
 GeForce4 4200 Go;3
 GeForce4 440 Go;3
-Intel 82915G/915GV/910GL;3
-Intel 82915G/GV/910GL Express;3
-Intel 865 Embedded Controller;3
-Intel 946GZ Embedded Chipset Function 0;3
-Intel Media Accelerator 500;3
+82915G/915GV/910GL;3
+82915G/GV/910GL Express;3
+865 Embedded Controller;3
+946GZ Embedded Chipset Function 0;3
+Media Accelerator 500;3
 Matrox Parhelia 128MB;3
 MOBILITY RADEON 7500;3
 MOBILITY RADEON 9000;3
@@ -2014,12 +2014,12 @@ VIA/S3G DeltaChrome IGP;3
 Dell 8100;2
 GeForce2 MX;2
 GeForce3 Ti 500;2
-Intel 82845G Controller;2
-Intel 82845G/GL Controller;2
-Intel 82845G/GL/GE/PE/GV Controller;2
-Intel 82915G/GV/910GL Advanced v3.5;2
-Intel GMA 3150 Express;2
-Intel Media Accelerator 3150;2
+82845G Controller;2
+82845G/GL Controller;2
+82845G/GL/GE/PE/GV Controller;2
+82915G/GV/910GL Advanced v3.5;2
+GMA 3150 Express;2
+Media Accelerator 3150;2
 MOBILITY RADEON 9100 IGP;2
 Quadro NVS 280 SD;2
 Radeon 7000 / Radeon VE;2
@@ -2037,8 +2037,8 @@ VIA Chrome9 HC IGP WDDM 1.1;2
 VIA Chrome9 HC3 IGP;2
 FireMV 2200 PCI;1
 IGP 340M;1
-Intel 82852/82855 GM/GME Controller;1
-Intel Extreme Controller;1
+82852/82855 GM/GME Controller;1
+Extreme Controller;1
 Quadro2 Pro;1
 RADEON IGP 34xM;1
 Rage 128 Pro;1

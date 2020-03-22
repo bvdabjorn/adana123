@@ -90,3 +90,5 @@ for i in range(0,length_data_frame):
 
 data_train['diff_price'] = diff_price
 
+data_train.to_csv('/Users/bjrn/Documents/GitHub/adana123/datafile2.csv')
+
