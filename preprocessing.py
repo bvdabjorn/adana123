@@ -4,9 +4,10 @@ from fuzzywuzzy import fuzz
 
 
 # Load data
-data_train = pd.read_csv('/Users/bjrn/Documents/GitHub/adana123/train.csv', keep_default_na=True)
-cpu_data = pd.read_csv('/Users/bjrn/Documents/GitHub/adana123/CPU_Benchmark.csv', sep=';')
-gpu_data = pd.read_csv('/Users/bjrn/Documents/GitHub/adana123/GPU_Benchmark.csv', sep=';')
+data_train = pd.read_csv('/Users/Simon/Documents/GitHub/adana123/train.csv', keep_default_na=True)
+# data_train = pd.read_csv('/Users/Simon/Documents/GitHub/adana123/test.csv', keep_default_na=True)
+cpu_data = pd.read_csv('/Users/Simon/Documents/GitHub/adana123/CPU_Benchmark.csv', sep=';')
+gpu_data = pd.read_csv('/Users/Simon/Documents/GitHub/adana123/GPU_Benchmark.csv', sep=';')
 
 #Make every entry uppercase
 data_train = data_train.apply(lambda x: x.astype(str).str.upper())
@@ -89,11 +90,11 @@ for i in range(len(data_train['gpu_type'])):
             data_train['gpu_benchmark'][i] = gpu_data['gpu passmark score'][j]
 
 ## Difference between Max and Min prices:
-diff_price = list()
-for i in range(0,length_data_frame):
-    diff_price.append(float(data_train['max_price'][i]) - float(data_train['min_price'][i]))
-
-data_train['diff_price'] = diff_price
-# data_train.to_csv("/Users/bjrn/Documents/GitHub/adana123/datafile2.csv")
-data_train.to_csv("/Users/bjrn/Documents/GitHub/adana123/datafile2.csv")
+# diff_price = list()
+# for i in range(0,length_data_frame):
+#     diff_price.append(float(data_train['max_price'][i]) - float(data_train['min_price'][i]))
+#
+# data_train['diff_price'] = diff_price
+data_train.to_csv("/Users/Simon/Documents/GitHub/adana123/datafile2.csv")
+# data_train.to_csv("/Users/Simon/Documents/GitHub/adana123/datafile2_test.csv")
 
