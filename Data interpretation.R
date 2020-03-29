@@ -18,6 +18,7 @@ blue <- "#1E90FF"
 
 #Make sure you have data_train from the "main" file.
 
+data_train <- read.csv('datafile2.csv', header = TRUE, na.strings = c('NAN','NA'))
 attach(data_train)
 
 ##Lets start with some basic plots.
@@ -29,6 +30,7 @@ ggplot.bar <- function(DT, variable, xlab){
     labs(y= "Abs frequency", x = xlab)
 }
 
+
 ggplot.bar(data_train, data_train$brand, "brand")
 ggplot.bar(data_train, data_train$screen_size,"screen_size")
 ggplot.bar(data_train, data_train$pixels_x,"pixels_x")
@@ -36,8 +38,11 @@ ggplot.bar(data_train, data_train$pixels_y, "pixels_y")
 ggplot.bar(data_train, data_train$screen_surface, "screen_surface")
 ggplot.bar(data_train, data_train$touchscreen, "touchscreen")
 ggplot.bar(data_train, data_train$cpu, "cpu")
+ggplot.bar(data_train, data_train$cpu_GHZ, "cpu_GHZ")
+ggplot.bar(data_train, data_train$cpu_benchmark, "cpu_benchmark")
 ggplot.bar(data_train, data_train$discrete_gpu, "discrete_gpu")
 ggplot.bar(data_train, data_train$gpu, "gpu")
+ggplot.bar(data_train, data_train$gpu_benchmark, "gpu_benchmark")
 ggplot.bar(data_train, data_train$os, "os")
 ggplot.bar(data_train, data_train$os_details, "os_details")
 ggplot.bar(data_train, data_train$ram, "ram")
