@@ -88,6 +88,27 @@ ggplot.point(data_train, data_train$os_details_2, "os_details_2")
 ggplot.point(data_train, data_train$cpu_details_2, "cpu_details_2")
 ggplot.point(data_train, data_train$pixel, "pixel")
 
+#correlatie
+cor(pixels_x,pixels_y)
+cor(ssd,storage)
+
+#
+mean(gpu_benchmark, na.rm = TRUE)
+median(gpu_benchmark, na.rm = TRUE)
+gpu_benchmark0 = data_train[which(data_train$discrete_gpu=="0"),]
+gpu_benchmark1 = data_train[which(data_train$discrete_gpu=="1"),]
+mean(gpu_benchmark0$gpu_benchmark, na.rm = TRUE)
+median(gpu_benchmark0$gpu_benchmark, na.rm = TRUE)
+mean(gpu_benchmark1$gpu_benchmark, na.rm = TRUE)
+median(gpu_benchmark1$gpu_benchmark, na.rm = TRUE)
+
+
+
+
+
+
+###############################################################################################################
+
 #Linear model maken
 #Min_price
 
@@ -97,7 +118,9 @@ leegmodel <- lm(min_price ~ 1, data=data_no_missing)
 leegmodel
 BIC(leegmodel)
 ssdmodel <- lm(min_price ~ ssd, data = data_no_missing)
-ssdmodel
+summary(ssdmodel)
+screensurfacemodel <- lm(min_price ~ screen_surface, data = data_no_missing)
+summary(screensurfacemodel)
 BIC(ssdmodel)
 volmodel <- lm(min_price ~ ., data=data_no_missing)
 volmodel
