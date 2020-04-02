@@ -56,6 +56,7 @@ ggplot.bar(data_train, data_train$gpu_type, "gpu_type")
 ggplot.bar(data_train, data_train$os_details_2, "os_details_2")
 ggplot.bar(data_train, data_train$cpu_details_2, "cpu_details_2")
 ggplot.bar(data_train, data_train$pixel, "pixel")
+ggplot.bar(data_train, data_train$detachable_keyboard, "detachable_keyboard")
 
 
 
