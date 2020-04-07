@@ -136,8 +136,31 @@ def link_gpu_to_benchmark_score(dataset, benchmarkset):
                 
     return dataset
             
-def missing_data(dataset):            
-    return
+def validateString(s):
+    letter_flag = False
+    number_flag = False
+    for i in s:
+        if i.isalpha():
+            letter_flag = True
+        if i.isdigit():
+            number_flag = True
+    return letter_flag, number_flag
+
+def get_name(dataset):      
+    length = len(dataset['base_name'])
+    dataset['pc_name'] = np.NaN
+    for i in range(0,length):
+        string = ''
+        for k in dataset['base_name'][i].split(' '):
+            k = k.replace('-',' ')
+            letter_flag, number_flag = validateString(k)
+            if (letter_flag == True and number_flag == True) or (letter_flag == False and number_flag == True):
+                break
+            else:
+                string = string + ' ' + k
+        dataset['pc_name'][i] = string[1:]
+                
+    return dataset
         
 
     
@@ -162,6 +185,7 @@ def main():
     data_train = link_gpu_to_benchmark_score(data_train, gpu_data)
     data_train = get_cpu_core(data_train)
     data_train = get_threading(data_train)
+    data_train = get_name(data_train)
     
     data_train.to_csv('/Users/bjrn/Documents/GitHub/adana123/datafile2.csv')
     
