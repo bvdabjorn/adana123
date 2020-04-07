@@ -167,15 +167,17 @@ def get_name(dataset):
 def main():
     
     #Load the 3 necessary datafiles 
-    data_train = pd.read_csv('/Users/bjrn/Documents/GitHub/adana123/train.csv', keep_default_na=True)
-    cpu_data = pd.read_csv('/Users/bjrn/Documents/GitHub/adana123/CPU_Benchmark.csv', sep=';')
-    gpu_data = pd.read_csv('/Users/bjrn/Documents/GitHub/adana123/GPU_Benchmark.csv', sep=';')
+    data_train = pd.read_csv('/Users/Simon/Documents/GitHub/adana123/train.csv', keep_default_na=True)
+    data_test = pd.read_csv('/Users/Simon/Documents/GitHub/adana123/test.csv', keep_default_na=True)
+    cpu_data = pd.read_csv('/Users/Simon/Documents/GitHub/adana123/CPU_Benchmark.csv', sep=';')
+    gpu_data = pd.read_csv('/Users/Simon/Documents/GitHub/adana123/GPU_Benchmark.csv', sep=';')
     
     
     #Preprocessing steps
-    data_train = make_uppercase(data_train)
     cpu_data = make_uppercase(cpu_data)
     gpu_data = make_uppercase(gpu_data)
+
+    data_train = make_uppercase(data_train)
     data_train = split_cpu(data_train)
     data_train = split_gpu(data_train)
     data_train = extract_os_details(data_train)
@@ -186,7 +188,20 @@ def main():
     data_train = get_cpu_core(data_train)
     data_train = get_threading(data_train)
     data_train = get_name(data_train)
+
+    data_test = make_uppercase(data_test)
+    data_test = split_cpu(data_test)
+    data_test = split_gpu(data_test)
+    data_test = extract_os_details(data_test)
+    data_test = extract_cpu_type_name(data_test)
+    data_test = extract_cpu_ghz(data_test)
+    data_test = link_cpu_to_benchmark_score(data_test, cpu_data)
+    data_test = link_gpu_to_benchmark_score(data_test, gpu_data)
+    data_test = get_cpu_core(data_test)
+    data_test = get_threading(data_test)
+    data_test = get_name(data_test)
     
-    data_train.to_csv('/Users/bjrn/Documents/GitHub/adana123/datafile2.csv')
+    data_train.to_csv('/Users/Simon/Documents/GitHub/adana123/datafile2.csv')
+    data_test.to_csv('/Users/Simon/Documents/GitHub/adana123/datafile2_test.csv')
     
 main()
