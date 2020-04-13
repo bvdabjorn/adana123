@@ -15,6 +15,7 @@ library(vcd)
 library(MASS)
 
 blue <- "#1E90FF"
+red <- "#CC0000"
 
 #Make sure you have data_train from the "main" file.
 
@@ -103,9 +104,6 @@ ggplot.point(data_train, data_train$os_details_2, "os_details_2")
 ggplot.point(data_train, data_train$cpu_details_2, "cpu_details_2")
 ggplot.point(data_train, data_train$pixel, "pixel")
 
-#correlatie
-cor(pixels_x,pixels_y)
-cor(ssd,storage)
 
 #
 mean(gpu_benchmark, na.rm = TRUE)
@@ -117,9 +115,25 @@ median(gpu_benchmark0$gpu_benchmark, na.rm = TRUE)
 mean(gpu_benchmark1$gpu_benchmark, na.rm = TRUE)
 median(gpu_benchmark1$gpu_benchmark, na.rm = TRUE)
 
+##################################################################
+#Correlaties en rest met volledige trainingset
+data_trainfull <- read.csv('datafile2.csv', header = TRUE, na.strings = c('NAN','NA'))
 
+#correlatie
+cor(data_trainfull$pixels_x, data_trainfull$pixels_y)
+cor(data_trainfull$ssd, data_trainfull$storage)
+cor(pixels_x, screen_size)
+cor(touchscreen, detachable_keyboard, use = "complete.obs")
+cor(ram, discrete_gpu)
+cor(ram, touchscreen)
+cor(discrete_gpu, gpu_benchmark)
+cor(discrete_gpu, cpu_benchmark)
+cor(gpu_benchmark, cpu_benchmark)
+cor(cpu_GHZ, cpu_benchmark)
+cor(threading, cpu_benchmark)
+cor(threading, cpu_GHZ)
 
-
+#corr screen surface en touchscreen
 
 
 ###############################################################################################################
