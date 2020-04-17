@@ -13,6 +13,7 @@ library(ggcorrplot)
 library(gridExtra)
 library(vcd)
 library(MASS)
+library(vcd)
 
 blue <- "#1E90FF"
 red <- "#CC0000"
@@ -69,13 +70,15 @@ ggplot.bar(data_train, data_train$pixel, "pixel")
 ggplot.bar(data_train, data_train$detachable_keyboard, "detachable_keyboard")
 
 #cpu_core frequency plot manueel om x-as in logische volgorde te hebben
-ggplot(data = data_train, aes(as.factor(data_train$cpu_core))) + theme_bw() + 
-  geom_bar(aes(y = (..count..)/sum(..count..), x = c("","DUAL-CORE","QUAD-CORE","HEXA-CORE","OCTA-CORE")  ), col = blue, fill = blue, alpha = 0.75,) +
-  labs(y= "Abs frequency", x = xlab) +
+herwerktecpucore <- data.frame(cores = c("Unknown","2","4","6","8"), number = c(5/357,158/357,139/357,54/357,1/357))
+summary(herwerktecpucore)
+ggplot(data = herwerktecpucore, aes(x = cores, y = number)) + theme_bw() + 
+  geom_col(col = blue, fill = blue, alpha = 0.75,) +
+  labs(y= "Abs frequency", x = "number of cores") +
   ggtitle("cpu_core frequency plot")
 
 
-ggplot.point <- function(DT, variable, xlab){
+ggplot.point2 <- function(DT, variable, xlab){
   ggplot(data_train, aes(variable, min_price)) +
     geom_point(col=blue) + labs(x=xlab) + 
     theme_bw()
@@ -134,9 +137,61 @@ cor(threading, cpu_benchmark)
 cor(threading, cpu_GHZ)
 
 #corr screen surface en touchscreen
-
+assocstats(cbind(data_train$cpu_core, data_train$cpu_type_name))
+assocstats(cbind(data_train$screen_surface, data_train$touchscreen))
+assocstats(cbind(data_trainfull$os, data_trainfull$os_details)[c(-311,-396),])
+assocstats(cbind(data_train$cpu_core, data_train$threading))
+assocstats(cbind(data_train$cpu_brand, data_train$cpu_type_name))
 
 ###############################################################################################################
+#Price difference zoeken
+difference <- data.frame( data_train$max_price-data_train$min_price )
+ggplot(data = difference) +
+  geom_histogram(aes(x = difference$data_train.max_price...data_train.min_price), binwidth = 50) + theme_bw()
+
+#data_train <- cbind(data_train,difference)
+
+ggplot(data = data_train) + theme_bw() + 
+  geom_point(aes(x = factor(threading), y = data_train.max_price...data_train.min_price) , col=blue)+
+  labs(x="threading", y="price difference")
+
+ggplot.point2 <- function(DT, variable, xlab){
+  ggplot(data_train, aes(variable, data_train.max_price...data_train.min_price)) +
+    geom_point(col=blue) + labs(x=xlab) + 
+    theme_bw()
+}
+
+ggplot.point2(data_train, data_train$brand, "brand")
+ggplot.point2(data_train, data_train$screen_size, "screen_size")
+ggplot.point2(data_train, data_train$pixels_x, "pixels_x")
+ggplot.point2(data_train, data_train$pixels_y, "pixels_y")
+ggplot.point2(data_train, data_train$screen_surface, "screen_surface")
+ggplot.point2(data_train, data_train$touchscreen, "touchscreen")
+ggplot.point2(data_train, data_train$cpu, "cpu")
+ggplot.point2(data_train, data_train$cpu_GHZ, "cpu_GHZ")
+ggplot.point2(data_train, data_train$cpu_core, "cpu_core")
+ggplot.point2(data_train, data_train$threading, "threading")
+ggplot.point2(data_train, data_train$cpu_benchmark, "cpu_benchmark")
+ggplot.point2(data_train, data_train$cpu_type_name, "cpu_type")
+ggplot.point2(data_train, data_train$discrete_gpu, "discrete_gpu")
+ggplot.point2(data_train, data_train$gpu, "gpu")
+ggplot.point2(data_train, data_train$gpu_benchmark, "gpu_benchmark")
+ggplot.point2(data_train, data_train$os, "os")
+ggplot.point2(data_train, data_train$os_details, "os_details")
+ggplot.point2(data_train, data_train$ram, "ram")
+ggplot.point2(data_train, data_train$ssd, "ssd")
+ggplot.point2(data_train, data_train$storage, "storage")
+ggplot.point2(data_train, data_train$weight, "weight")
+ggplot.point2(data_train, data_train$cpu_brand, "cpu_brand")
+ggplot.point2(data_train, data_train$cpu_type_name, "cpu_type_name")
+ggplot.point2(data_train, data_train$gpu_brand, "gpu_brand")
+ggplot.point2(data_train, data_train$gpu_type, "gpu_type")
+ggplot.point2(data_train, data_train$os_details_2, "os_details_2")
+ggplot.point2(data_train, data_train$cpu_details_2, "cpu_details_2")
+ggplot.point2(data_train, data_train$pixel, "pixel")
+ggplot.point2(data_train, data_train$detachable_keyboard, "detachable keyboard")
+
+#########################################################################################################
 
 #Linear model maken
 #Min_price
