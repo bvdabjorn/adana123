@@ -22,6 +22,9 @@ red <- "#CC0000"
 
 data_train <- read.csv('trainingdata.csv', header = TRUE, na.strings = c('NAN','NA'))
 attach(data_train)
+difference <- data.frame( data_train$max_price-data_train$min_price )
+names(difference) <- "differences"
+data_train <- cbind(data_train,difference)
 
 ##Lets start with some basic plots.
 #Frequency plots
@@ -145,18 +148,17 @@ assocstats(cbind(data_train$cpu_brand, data_train$cpu_type_name))
 
 ###############################################################################################################
 #Price difference zoeken
-difference <- data.frame( data_train$max_price-data_train$min_price )
-ggplot(data = difference) +
-  geom_histogram(aes(x = difference$data_train.max_price...data_train.min_price), binwidth = 50) + theme_bw()
 
-#data_train <- cbind(data_train,difference)
+ggplot(data = difference) +
+  geom_histogram(aes(x = difference$data_train$differences), binwidth = 50) + theme_bw()
+
 
 ggplot(data = data_train) + theme_bw() + 
-  geom_point(aes(x = factor(threading), y = data_train.max_price...data_train.min_price) , col=blue)+
+  geom_point(aes(x = factor(threading), y = data_train$differences) , col=blue)+
   labs(x="threading", y="price difference")
 
 ggplot.point2 <- function(DT, variable, xlab){
-  ggplot(data_train, aes(variable, data_train.max_price...data_train.min_price)) +
+  ggplot(data_train, aes(variable, data_train$differences)) +
     geom_point(col=blue) + labs(x=xlab) + 
     theme_bw()
 }
