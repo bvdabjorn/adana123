@@ -194,7 +194,21 @@ ggplot.point2(data_train, data_train$pixel, "pixel")
 ggplot.point2(data_train, data_train$detachable_keyboard, "detachable keyboard")
 
 #########################################################################################################
+#Scatterplot
+testresults <- read.csv('testingdata_results.csv', header = TRUE, na.strings = c('NAN','NA'))
 
+#min_price
+ggplot(testresults, aes(x = act_min_price, y = pred_min_price, color = brand)) +
+  geom_point() + theme_bw() +
+  geom_abline(intercept = 0, slope = 1, linetype = 2)
+
+#max_price
+ggplot(testresults, aes(x = act_max_price, y = pred_max_price, color = brand)) +
+  geom_point() + theme_bw() +
+  geom_abline(intercept = 0, slope = 1, linetype = 2)
+
+
+##########################################################################################################
 #Linear model maken
 #Min_price
 
