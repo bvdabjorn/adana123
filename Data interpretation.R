@@ -207,6 +207,10 @@ ggplot(testresults, aes(x = act_max_price, y = pred_max_price, color = brand)) +
   geom_point() + theme_bw() +
   geom_abline(intercept = 0, slope = 1, linetype = 2)
 
+#Mean Summed Absolute Error
+ggplot(testresults, aes(x = act_max_price, y = (abs(pred_max_price-act_max_price) + abs(pred_min_price-act_min_price))/2, color = cpu_core)) +
+  geom_point() + theme_bw() +
+  geom_abline(intercept = 310, slope = 0, linetype = 2)
 
 ##########################################################################################################
 #Linear model maken
