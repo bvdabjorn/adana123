@@ -146,6 +146,9 @@ assocstats(cbind(data_trainfull$os, data_trainfull$os_details)[c(-311,-396),])
 assocstats(cbind(data_train$cpu_core, data_train$threading))
 assocstats(cbind(data_train$cpu_brand, data_train$cpu_type_name))
 
+ggplot(data_train, aes(x = cpu_GHZ, y = cpu_core)) + theme_bw() +
+         geom_jitter()
+
 ###############################################################################################################
 #Price difference zoeken
 
@@ -208,40 +211,18 @@ ggplot(testresults, aes(x = act_max_price, y = pred_max_price, color = brand)) +
   geom_abline(intercept = 0, slope = 1, linetype = 2)
 
 #Mean Summed Absolute Error
-ggplot(testresults, aes(x = act_max_price, y = (abs(pred_max_price-act_max_price) + abs(pred_min_price-act_min_price))/2, color = cpu_core)) +
+ggplot(testresults, aes(x = act_max_price, y = (abs(pred_max_price-act_max_price) + abs(pred_min_price-act_min_price))/2, color = brand)) +
   geom_point() + theme_bw() +
-  geom_abline(intercept = 310, slope = 0, linetype = 2)
+  geom_abline(intercept = 310, slope = 0, linetype = 2) +
+  labs(title = "MSAE of every instance", x = "actual maximum price", y = "MSAE")
 
 ##########################################################################################################
-#Linear model maken
-#Min_price
+#Why lenovo and asus
+Originaltrainset <- read.csv('datafile2.csv', header = TRUE, na.strings = c('NAN','NA'))
+lenovo <- Originaltrainset[which(Originaltrainset$brand == "LENOVO"),]
+ggplot(lenovo, aes(x = max_price, y = pc_name, color = max_price)) + theme_bw() +
+  geom_point()
 
-data_no_missing = data_train[-(missing_data_train$X-1),]
-
-leegmodel <- lm(min_price ~ 1, data=data_no_missing)
-leegmodel
-BIC(leegmodel)
-ssdmodel <- lm(min_price ~ ssd, data = data_no_missing)
-summary(ssdmodel)
-screensurfacemodel <- lm(min_price ~ screen_surface, data = data_no_missing)
-summary(screensurfacemodel)
-BIC(ssdmodel)
-volmodel <- lm(min_price ~ ., data=data_no_missing)
-volmodel
-BIC(volmodel)
-summary(volmodel)
-#BrandRazor, cpuIntelcoreI9,cpuIntelXeon, ssd Zijn significant, zelfs in het overvolle model!
-
-
-
-stepAIC(volmodel, k=log(nrow(data_no_missing)), direction = "both", scope=list(upper=~. , data=data_no_missing, lower=~1 ))
-
-
-
-
-
-Basiscomponentenmodel <- lm(min_price ~ pixels_x + factor(discrete_gpu) + os + ram + ssd + storage  , data=data_train)
-
-BIC(Basiscomponentenmodel)
-
-summary(Basiscomponentenmodel)
+asus <- Originaltrainset[which(Originaltrainset$brand == "ASUS"),]
+ggplot(asus, aes(x = max_price, y = pc_name, color = max_price)) + theme_bw() +
+  geom_point()
