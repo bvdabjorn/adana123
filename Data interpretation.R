@@ -203,12 +203,16 @@ testresults <- read.csv('testingdata_results.csv', header = TRUE, na.strings = c
 #min_price
 ggplot(testresults, aes(x = act_min_price, y = pred_min_price, color = brand)) +
   geom_point() + theme_bw() +
-  geom_abline(intercept = 0, slope = 1, linetype = 2)
+  geom_abline(intercept = 0, slope = 1, linetype = 2) +
+  ggtitle("Actual vs Predicted Minimum Price")
+#Python: sns.relplot(x='pred_min_price',y='act_min_price',hue='brand',data=df)
 
 #max_price
 ggplot(testresults, aes(x = act_max_price, y = pred_max_price, color = brand)) +
   geom_point() + theme_bw() +
-  geom_abline(intercept = 0, slope = 1, linetype = 2)
+  geom_abline(intercept = 0, slope = 1, linetype = 2) +
+  ggtitle("Actual vs Predicted Maximum Price")
+#Python: sns.relplot(x='pred_max_price',y='act_max_price',hue='brand',data=df)
 
 #Mean Summed Absolute Error
 ggplot(testresults, aes(x = act_max_price, y = (abs(pred_max_price-act_max_price) + abs(pred_min_price-act_min_price))/2, color = brand)) +
