@@ -255,3 +255,5 @@ ggplot(privatelbresults, aes(x = act_max_price, y = (abs(pred_max_price-act_max_
   geom_point() + theme_bw() +
   geom_abline(intercept = 310, slope = 0, linetype = 2) +
   labs(title = "MSAE of every instance LB", x = "actual maximum price", y = "MSAE")
+
+View()
