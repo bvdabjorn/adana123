@@ -230,3 +230,28 @@ ggplot(lenovo, aes(x = max_price, y = pc_name, color = max_price)) + theme_bw() 
 asus <- Originaltrainset[which(Originaltrainset$brand == "ASUS"),]
 ggplot(asus, aes(x = max_price, y = pc_name, color = max_price)) + theme_bw() +
   geom_point()
+
+##################################################################################################################
+# Hidden leaderbord results
+
+privatelbresults <- read.csv('Private_LB_Results.csv', header = TRUE, na.strings = c('NAN','NA'))
+
+#min_price
+ggplot(privatelbresults, aes(x = act_min_price, y = pred_min_price, color = brand)) +
+  geom_point() + theme_bw() +
+  geom_abline(intercept = 0, slope = 1, linetype = 2) +
+  ggtitle("Actual vs Predicted Minimum Price LB")
+#Python: sns.relplot(x='pred_min_price',y='act_min_price',hue='brand',data=df)
+
+#max_price
+ggplot(privatelbresults, aes(x = act_max_price, y = pred_max_price, color = brand)) +
+  geom_point() + theme_bw() +
+  geom_abline(intercept = 0, slope = 1, linetype = 2) +
+  ggtitle("Actual vs Predicted Maximum Price LB")
+#Python: sns.relplot(x='pred_max_price',y='act_max_price',hue='brand',data=df)
+
+#Mean Summed Absolute Error
+ggplot(privatelbresults, aes(x = act_max_price, y = (abs(pred_max_price-act_max_price) + abs(pred_min_price-act_min_price))/2, color = brand)) +
+  geom_point() + theme_bw() +
+  geom_abline(intercept = 310, slope = 0, linetype = 2) +
+  labs(title = "MSAE of every instance LB", x = "actual maximum price", y = "MSAE")
